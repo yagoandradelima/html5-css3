@@ -1,0 +1,62 @@
+@charset "UTF08";
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /*
+
+    ANOTAÇÕES
+    
+    SINTAXE
+    font-family: fonte principal, fonte secundária caso não tenha a principal no pc, família de fonte e opção terciária caso nenhuma das fontes anteriores sejam encontradas
+
+    ---------
+
+    Medidas Aboslutas
+    cm - Centimetro - Não é muito bom utilizar por causa de tamanhos diferentes de tela
+    mm - Milimetro  - Mesmo problema do centímetro 
+    in - Polegada   - Mesmo problema do centímetro
+    px - Pixel      - Tem problemas com tela de retina, pois elas mostra 1/4 de pixel
+    pt - Ponto      - Não é bom para ser utilizado em telas, mas interessante para impressões em papel
+    pc - Pyca       - Mesmo problema do ponto
+
+    Medidas Relativas
+    em - Altura relativa à letra m maiúscula da fonte utilizada
+    ex - Altura relatica à letra x minúscula da fonte utilizada
+    rem - Altura relativa à fonte base instalada no computador
+    vw - Relativo ao tamanho da largura da tela
+    vh - Relativo ao tamanho da altura da tela
+
+    W3C Recomenda: 
+    px
+    >>em (priorizar)
+
+    Por padrão: 16px = 1em   
+    */
+
+    font-size: 1.5em; /* Tamanho da fonte */
+    font-weight: 100; /* Peso da fonte - usado para negritar a mensagem e substitui a função de negrito - */
+    font-style: italic; /* Estilo de fonte - usa para mudar o estilo da fonte e substitui a função de itálico - */
+    text-decoration: underline; /* Decoração de fonte - utilizado para estilizar a fonte e substitui o sublinado */
+
+    /* É sempre muito bom apertar ctrl + espaço para ver as opções das instruções acima */ 
+}
+
+/* eu posso realizar uma mesma declaração para dois contextos. Basta separar os contextos (no caso h1 e h2) por virgula */
+
+h1, h2{
+    /* 
+    
+    SHORTHAND FONT
+    Utilizado para encurtar o código e auxiliar ao aplicar diversas estilizações diferentes sobre elas. Existem diversas shorthands
+   
+    SINTAXE
+    font: font-style font-weight font-size font-family
+
+    A ordem importa!
+
+    */
+
+    font: italic bolder 3em arial, sans-serif
+
+}

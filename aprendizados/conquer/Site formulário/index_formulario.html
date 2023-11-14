@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios II</title>
+</head>
+<body>
+    <form action="">
+    <p>
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" required>
+    </p>
+    <p>
+        <label for="email">Digite seu e-mail:</label>
+        <input type="email" required>
+    </p>
+    <p>
+        <label for="password">Digite sua senha:</label>
+        <input type="password" pattern=".{8,}" required>
+    </p>
+    <p>
+        <label for="search">Faça uma busca</label>
+        <input type="search">
+    </p>
+    
+    <p>    
+        <label for="cellphone">Digite seu telefone WhatsApp:</label>
+        <input type="tel" name="" id="">
+    </p>
+    
+    <p>
+        <label for="number">Informe um número</label>
+        <input type="number" min="0" max="100">
+    </p>
+    
+    <p>
+        <label for="skilllevel">Qual seu nível de conhecimento no HTML?</label>
+        <input type="range">
+    </p>
+
+    <p>
+        <label for="description">Escreva um pouco sobre você:</label>
+        <textarea name="description" id="" cols="30" rows="10"></textarea>
+    </p>
+    <p class="checkbox-wrapper">
+        <input type="checkbox" name="rememberMe" id="rememberMe">
+        <label for="rememberMe">Concordo com os termos de Privacidade</label>    
+    </p>
+    <fieldset>
+        <legend>Qual das tecnologias abaixo você tem mais conhecimento?</legend>
+        <div>
+            <input type="radio" name="technology" id="technology">
+            <label for="technology">HTML5</label>
+        </div>
+
+        <div>
+            <input type="radio" name="technology" id="technology">
+            <label for="techonology">CSS3</label>
+        </div>
+
+        <div>
+            <input type="radio" name="technology" id="technology">
+            <label for="technology">C#</label>
+        </div>
+    </fieldset>
+    <div>
+        <input type="reset" value="Redefinir">
+        <input type="submit" value="Enviar">
+    </div>
+    </form>
+</body>
+</html>

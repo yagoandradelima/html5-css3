@@ -1,0 +1,53 @@
+Teoria Box-Model
+
+Elementos de uma caixa
+
+height   - Altura da caixa
+width    - Largura da caixa
+border   - Borda da caixa, mais especificamente um linha colada entre o conteúdo da caixa e a parte externa
+padding  - Preenchimento entre o conteúdo da caixa e a sua borda
+margin   - Preenchimento entre a borda da caixa e o lado externo
+outline  - Contorno que fica colado do lado externo da borda
+
+Tipos de Caixas
+
+> box-level
+  >> Ocupam toda a largura da tela
+  >> Quando são utilizadas elas pulam a linha do conteúdo anterior
+  >> Quando terminam, eles pulam a linha para a próximo conteúdo
+  >> "Ele é isolado. É independente."
+  >> Exemplos:
+    - <div>
+    - <h1>-<h6>
+    - <p>
+    - <main>
+    - <header>
+    - <nav>
+    - <article>
+    - <aside>
+    - <footer>
+    - <form>
+    - <video>
+
+> inline-level
+  >> Ocupa somente a largura do conteúdo que existe dentro dele
+  >> Não pula a linha do conteúdo anterior
+  >> Não pula a linha do próximo conteúdo
+  >> Exemplos:
+    - <span>
+    - <a>
+    - <code>
+    - <small>
+    - <strong>
+    - <em>
+    - <sup>-<sub>
+    - <label>
+    - <button>
+    - <input>
+    - <select>
+
+
+!Importante
+Por padrão, os navegadores aplicam diversos estilos "deafult" aos elementos de um códgio em HTML. Isso significa que mesmo para elementos como <h1> ou <p> existe uma estilizaçãp básica que é aplicada. É possível ver isso na parte de estilos ao se INSPECIONAR A PÁGINA.
+
+Na parte de inspeção também é possível verificar toda a estrutura de caixas de elementos box e inline-level. É só passar o mouse por cima do código.

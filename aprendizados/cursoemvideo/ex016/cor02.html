@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{
+            height: 100%;
+        }
+        body{
+            /*background-color: aqua;*/
+            /*background-image: linear-gradient(to right, #79E6F2, #799AF2);*/
+            background-image: radial-gradient(circle, #79F2D6 7%, #79C0F2 14%, #79E6F2, #79F2AD, #799AF2);
+            /*ao lado da cor eu coloco a proporção da cor na tela*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando grandiente</h1>
+</body>
+</html>
+
+<!--
+    ANOTAÇÕES SINTAXE DE FUNÇÕES
+
+    background-image: função ampla que pode permitir a inserção de imagens e grandientes no fundo da tela.
+    Na notação acima, o exemplo digitado vai formar um gradiente. Sintaxe melhor explicada abaixo.
+
+    backgound-image: linear-gradient(*direção do gradiente, cor 1, cor 2, cor 3, ..., cor N)
+        *direção do gradiente - Pode ser escrito como 'to right', 'to bottom', 'to left' e por aí vai
+                              - Pode ser escrito em graus como '90deg', '30deg', '45deg' e por aí vai
+        
+    background-image: radial-gradiente(*formato, cor 1, cor 2, cor 3, ..., cor N)
+        *formato - Só aprendi o formato em círculo, square não funcionou
+
+-->

@@ -1,0 +1,160 @@
+@charset "UTF-08";
+
+@font-face {
+    font-family: 'android';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Removendo as bordas que impedem da estilização de ficar por todo o tamanho da tela*/
+body {
+    margin: 0px;
+}
+
+#header {
+    margin-bottom: 1px;
+    background-image: linear-gradient(to bottom, #0DFF51, #33CC5E, #45995D, #306d41);  
+    box-shadow: 1px 1px 8px 1px black;
+}
+
+.titulogeral {
+    margin: 0px;
+    padding: 40px 0px 0px 0px;
+    font: normal lighter 32px verdana; /*ajustar family font*/
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px rgb(32, 32, 32);
+}
+
+header > p {
+    margin: 40px auto;
+    width: 550px;
+    font: normal bold 16px arial;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px rgb(32, 32, 32);
+}
+
+nav {
+    font: normal bold 14px arial;
+    padding-bottom: 10px;
+    color: white;
+    text-align: left;
+    text-shadow: 1px 1px 5px black;
+}
+
+.navopcao {
+    padding: 10px;
+    text-decoration: none; /*remove o underline das opções*/
+}
+
+.navopcao:visited {
+    color: white;
+    text-decoration: dashed;
+}
+
+main {
+    margin: 0px;
+    background-color: #f9e4b7;
+    box-shadow: inset 0px 0px 20px 0px black;
+}
+
+section {
+    margin: auto; /*centralizar*/
+    width: 550px; /*diminuir espaço do texto*/
+    font: normal normal 0.9em arial;
+    background-color: white;
+    padding: 20px; /*espaço entre conteúdo e caixa*/
+    box-shadow: 0px 8px 30px 0px rgb(105, 105, 105);
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+section > p {
+    text-align: justify; /*justificando texto*/
+    text-indent: 30px; /*Início do parágrafo*/
+    line-height: 1.5;
+}
+
+.titulosection {
+    font: normal normal 1.8em android;
+    color:  #45995D;
+    text-shadow: 1px 1px 3px black;
+}
+
+h2 {
+    font: normal normal 1.6em android;
+    color:  #45995D;
+    text-shadow: 1px 1px 3px black;
+    background-image: linear-gradient(to right, #8ffcae, rgb(170, 252, 193),rgb(255, 255, 255), white);
+}
+
+/*
+#bugdroid {
+    height: 150px;
+    width: 200px;
+}*/
+
+.imagens {
+    display: block;
+    margin: auto;
+    width: 550px;
+}
+
+#titulofinal {
+    background-color: #33CC5E;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    text-indent: 0px;
+}
+
+article {
+    display: block;
+    background-color: #8ffcae;
+    border-radius: 10px;
+    height: 420px;
+    text-align: justify;
+    text-indent: 30px;
+    box-shadow: 1px 2px 18px 1px rgb(145, 142, 142);
+}
+
+/* criado para estruturar o texto sem enconstar na caixa do article*/
+article > p {
+    padding: 0px 14px;
+    line-height: 1.5;
+}
+
+article > ul {
+    list-style-type: "🗸";
+    column-count: 2;
+}
+
+footer {
+    background-color: #306d41;
+}
+
+footer > p {
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(223, 219, 219);
+    text-align: center;
+    padding: 4px;
+}
+
+.destaque {
+    color: #306d41;
+    font-weight: bold;
+    background-color: white;
+}
+
+.linktexto {
+    color: #306d41;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.linktexto::after {
+    content: '🔗';
+}

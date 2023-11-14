@@ -1,0 +1,45 @@
+Esse documento de texto tem como fundamento me guiar por dentro dos exercícios criados para o curso de HTML5 e CSS3. Assim, facilitando relembrar conteúdos que podem ser revisitados no futuro.
+
+Exercícios dentro das aulas
+
+ex001  = Como criar um código base e 'Olá Mundo!'
+
+ex002  = Criando títulos, parágrafos, quebras de linha, símbolos comuns, específicos e emojis
+
+ex003  = Carregando imagens internas (do PC) e imagens externas (da web)
+
+ex004  = Carregando um ícone para a aba do meu site e mudando o nome da aba
+
+ex005  = Nada
+
+ex006  = Hierarquia de títulos
+
+ex007  = Nada
+
+ex008  = Formatação de textos como ênfase, sublinhado, itálico, marcação e envelopamento
+
+ex008b = Outros tipos de formatações como códigos, pre, citações e alt de referências
+
+ex009  = Criação de listas: ordenadas e não ordenadas e suas estilizações básicas
+
+ex010  = Links externos e referências para outras áginas de um mesmo site. Disponilizando um download e como voltar para a página inicial
+
+ex011  = Mídias em HTML5 como adicionar áudios, imagens e vídeos e como ajustar seus tipos e instruções básicas
+
+ex012  = Inserindo vídeos hospedados localmente e externamente como Youtube ou Vimeo
+
+ex013  = Aprendendo a realizar estilos inline (meio obsoleto, mas útil)
+
+ex014  = Estilos locais (bom de se utilizar quando se tem só uma página em HTML)
+
+ex015  = Estilos externos (muito bom utilizar pra organizar o código e é útil) [recomendado usar]
+
+ex016  = Aplicando o conceito de paletas de cores e entendendo como configurar cores em CSS
+
+ex017  = Aplicando o conceito de tipografia e entendendo como configurar fontes em CSS
+
+ex018  = Configurando fontes externas e internas com @import
+ 
+ex019  = Id e Classe - seletores, uso e conceitos
+
+ex020  = Mais sobre classes, pseudo-classes, pseudo-elementos e levemente sobre childrem (hierarquia)

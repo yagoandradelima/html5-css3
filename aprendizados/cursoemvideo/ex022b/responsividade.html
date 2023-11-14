@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 200px; /*Mínima largura disponível para o main antes dele virar uma "rolagem lateral" no navegador*/
+            max-width: 800px; /*Máxima largura do main, pra ele não ocupar o navegador inteiro em telas gigantes*/
+            margin: auto;
+        }
+
+        img {
+            width: 100%; /* Obriga a imagem a ocupar 100% da MAIN */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nihil sint, quae eos voluptates quo est numquam debitis obcaecati temporibus eligendi illum alias expedita quod explicabo nemo neque, facere et!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam adipisci, ipsam rem recusandae dicta quo eius voluptates nihil dolores. Quos laboriosam tempore blanditiis expedita dolor repudiandae temporibus totam. Quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique porro ut impedit consectetur, rem totam eius suscipit accusamus magni magnam quam, velit consequuntur, voluptate sapiente rerum illum aliquid est. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi doloribus numquam modi consequatur esse iusto ut quos voluptatibus! Exercitationem unde delectus hic saepe numquam a quos fuga ipsa consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolor quod odit aliquam veniam ipsa quasi. Asperiores expedita dicta eos architecto. Eos saepe repellendus dolores. Maiores nam cupiditate corporis magni!
+        </p>
+
+        
+        <picture>
+            <!-- Entendendo a responsividade de imagens -->
+            <!-- media = "tamanho máximo antes da troca de imagem horizontal" | srcset="local da imagem pra trocar" -->
+            <source media="(max-width: 600px)" srcset="../d010/pacote-projeto-d010/imagens/irina-blok-pq.jpg">
+            <img src="../d010/pacote-projeto-d010/imagens/irina-blok.jpg" alt="">
+        </picture>
+    </main>
+</body>
+</html>
+
+
+
+<!--
+    A Real é a sintaxe da responsividade de imagens eu não entendi muito bem
+-->
+

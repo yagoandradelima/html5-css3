@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgrey;
+        }
+
+        header {
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 7px 10px 7px 25px;
+        }
+
+        article {
+            background-color: lightcoral;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(133, 67, 67);
+        }
+
+        footer{
+            background-color: black;
+            color: lightgray;
+        }
+
+        nav {
+            background-color: brown;
+            padding: 3px;
+            box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.507);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Esporte</a>
+            <a href="#">Política</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <h1>Assunto 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt nesciunt et hic dignissimos repellat dolorem esse exercitationem, provident ducimus quibusdam quia laboriosam. Ullam aspernatur sapiente placeat enim consequuntur ut blanditiis?</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Artigo sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore molestiae dolores ab distinctio temporibus dicta. Ducimus distinctio deleniti id? Tempore praesentium maiores animi incidunt fugiat voluptatibus soluta mollitia eaque.</p>
+                <aside>
+                    <p>Artigo escrito por Eu</p>
+                </aside>
+            </article>
+            
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Site criado por Yago Lima Andrade</p>
+    </footer>
+</body>
+</html>
+
+
+<!--
+    ANOTAÇÕES
+
+    Antigamente tudo vivia dentro de <div>s e isso era visualmente difícil de compreender, pois diversas divs ganhavam ids diferentes e isso prejudicava e bagunçava o site.
+
+    Acima tem exemplos de Gouping Tags SEMÂNTICAS, que nada mais são que <div>s, mas com o nome da sua devida função dentro de um site. Por exemplo:
+
+        <header>  = Cabeçalho
+        <main>    = Conteúdo principal do site
+        <footer>  = Rodapé
+        <nav>     = Menu de navegação
+        <section> = Seção do HTML
+        <article> = Artigo interno
+        <aside>   = Uma espécie de destaque de rodapé
+
+    Nada impede do uso contínuo do esquema de <div>s, mas os mecanismos de busca conseguem compreender melhor a função de cada elemento no seu site se você indicar as Grouping Tags utilizando a semântica.
+-->
+
+
+<!--
+    ANOTAÇÕES
+
+    box-shadow: deslocamento horizontal  deslocamento vertical  espçamento da sombra  embaçamento  cor da sombra
+
+    Sombra é uma coisa bem peculiar de configurar. As melhores alternativas são sempre deixar as sombras levemente transparentes e não muito destacadas pra não poluir o site. Posso usar a uma função de box-shadow do dev tools para configurar melhor as sombras.
+-->
+
+
+<!--
+    ANOTAÇÕES
+
+    border-radius: superior esquerda  superior direita  inferior direita  inferior esquerda
+
+    Posso usar também declaração em % para o border-radius. Se eu colocar 50% ele vira umda roda.
+
+    Arredondamento de bordas. Por si só já é uma shorthand. Usando os mesmos métodos de shorhand utilizados para outras funções do CSS como padding e margin, como uso de duas medidas declaradas no código ou apenas uma medida que vale para as quatro posições.
+-->

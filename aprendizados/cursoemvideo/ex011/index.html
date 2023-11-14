@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou aumentar e diminuir o tamanho da aba do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+
+<!-- Source media - max width = tamanho mínimo para a imagens aparecer
+
+    srcset = foto que vai aparecer quando a condição de width for cumprida
+
+    type = formato da imagem
+
+    abaixo de todas as condições de imagem vem a fonte oficial da imagem
+ -->
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio src="midia/World's Sunrise - Jimena Contreras.mp3" controls autoplay></audio>
+<!-- autoplay = toca sozinho ao abrir o site 
+ 
+    controls = fazer aparecer os controles do áudio como pause, play e velocidade
+-->
+    <audio>
+        <source src="midia/World's Sunrise - Jimena Contreras.mp3" type="audio/mpeg">
+        <source src="midia/World's Sunrise - Jimena Contreras.mp3" type="audio/ogg">
+        <source src="midia/World's Sunrise - Jimena Contreras.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não é compatível com o áudio em HTML</p>
+
+<!-- type = formato do arquivo de áudio. Assim como no source superior para imagens, aqui a ordem também importa 
+
+Verificar no material em pdf como colocar types para seus respecticos formatos
+-->
+    </audio>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 200px;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p> <!-- Esse paragrafo está dentro de um div, ou seja, "filho" dela -->
+    <p>Fim do exemplo</p>
+    </div>
+</body>
+</html>
+
+<!--
+    ANOTAÇÕES ENTENDENDO SINTAXE DO STYLE AQUI
+
+    div > p = selecione para estilizar apenas o parágrafos que são "filhos" de divs (nesse caso temos apenas 1)
+        display: none = esconder o elemento selecionado (no caso o parágrafo)
+    
+    div:hover > p = selecione para obter os estilos declarados abaixo, os parágrafos que forem "filhos" de divs onde o mouse passar em cima
+        display: block = mostre o parágrafo
+
+    Traduzindo, quando o mouse estiver fora da div, esconder o texto, mas se ele estiver por cima, o texto será exibido com a estilização de div:hover > p
+-->

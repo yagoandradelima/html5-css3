@@ -1,0 +1,45 @@
+@charset  "UTF08";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #348888, #22BABB);
+}
+
+p{
+    text-align: justify;
+}
+
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #205353;
+}
+
+h1{
+    color: #F24405;
+    text-align: center;
+    text-shadow: 1px 1px 0px black;
+}
+
+h2{
+    color: #FA7F08
+}
+
+/*
+    ANOTAÇÕES SINTAXE DE FUNÇÕES
+
+    * é um seletor de tudo o que é possível selecionar.
+
+    text-align     - Alinhamento do texto [apertar crtl+espaço para ver as opções de alinhamento]
+    width          - Largura da caixa selecionada. Pode ser definida em pontos (pts) ou pixels (px).
+    padding        - Distância desta caixa para outras caixas
+    box-shadow     - Sombreamento da caixa (sombra à direita, sombra embaixo, espalhamento da sombra, cor)
+    border-radius  - Arredondamento das bordas em px ou pts
+
+*/

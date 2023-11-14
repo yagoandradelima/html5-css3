@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */            
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+        
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+
+        .especial::after{
+            content: '[Vírus]';
+            text-decoration: solid;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://g1.globo.com/">Site do G1</a></li>
+        <li><a href="https://www.youtube.com/">Canal do Youtube</a></li>
+        <li><a href="https://coolors.co/fac9b8-e5d4c0-c5decd-a1e8cc-495159" class="especial">Site</a></li>
+    </ul>
+</body>
+</html>
+
+<!--
+    ANOTAÇÕES SOBRE NOVAS PSEUDOCLASSES E PSEUDOELEMENTOS
+
+    :visited = Aparentemente uma pseudoclasse para links onde seleciona links que você já visitou anteriormente. Nesse caso, se eu visitar um site a partir desse site aqui, o link fica em vermelho escuro.
+
+    :active = Uma pseudoclasse que atua exatamente no momento do clique no link.
+
+    PSEUDOELEMENTOS
+    Os pseudoelementos trabalham de maneira similar às pseudoclasses, mas eles são referenciados com :: ou invés de : das pseudoclasses.
+
+    Eles buscam se referênciar com base em elementos, ou seja, buscam um elemento para usar como referência para aplicar sua estilização.
+
+    No exemplo desse código eu pedi para que ele estilizasse de maneira específica o conteúdo após os links (a::after <- foi o que solicitei)
+
+    Posso também lançar um a::before para editar o que vier antes. Existem diversas maneiras de realizar esse procedimento. O código contendo a classe especial mais uma referência de pseudoelemente é um exemplo disso.
+-->

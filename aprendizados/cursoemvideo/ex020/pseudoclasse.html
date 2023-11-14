@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudclasses</title>
+    <style>
+        div {
+            background-color: lightgrey;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black; /* shorthand de borda */
+            display: inline-block;
+        }
+
+        div:hover {
+            background-color: yellow;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
+
+<!--
+    ANOTAÇÃO SOBRE PSEUDOCLASSES
+    Basicamente pseudoclasses são modos de referenciar um elemento do HTML (nesse caso as divs) baseado no seu estado!
+    Para fazer isso eu posso utilizar o mesmo método de declaração anterior, mas ao invés de usar # ou . eu uso o : (dois pontos).
+
+    No exemplo acima eu realizei uma pseudoclasse dentro de style. Eu queria que apenas as divs que estivessem com o mouse sobre elas mudassem seu estilo para ter o fudo amarelo. Com isso eu consegui usar o estado daquele objeto a meu favor.
+-->

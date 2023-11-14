@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: darkgray;
+            height: 300px;
+            width: 400px;
+
+            border: 10px solid darkmagenta;
+            padding: 10px;
+            margin: 20px auto;
+            outline: 10px dashed darkorange;
+
+            /*
+            SINTAXE DAS SHORTHANDS
+
+            border: width style color;
+            padding: top right bottom left
+            margin: top right bottom left
+            outline: width style color
+
+
+            SHORTHAND DA SHORTHAND
+
+            padding: 10px (top, right, bottom, left = 10px)
+            padding: 10px 20px (top, bottom = 10px / right, left = 20px)
+        
+            !Funciona também para marging
+
+            margin: 10px auto 10px auto; (top, bottom = 10px / right, left = centralizados)
+
+            Dá pra usar a regra de duas declarações também pra esse caso
+            */          
+        }
+
+        a {
+            border: 8px dotted blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são caixas box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como funciona na prática</p>
+</body>
+</html>
+
+<!--
+    ANOTAÇÕES
+
+    Esse código é a versão da caixa01, mas com o uso de shorthands, ou seja, simplificações de código. É só comparar a parte de estilo desse documento HTML com o estilo do anterior.
+
+
+    !A função DISPLAY altera a característica de um bloco.
+
+    display: block = transforma a caixa em uma box-level
+    display: inline = transforma a caixa para inline-level
+-->

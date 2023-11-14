@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal">Criando sites comHTML e CSS</h1>
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico">HTML Básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perferendis nulla rem, tempora numquam et laudantium suscipit <span class="basico">laborum temporibus</span> illum alias iste a obcaecati inventore, omnis aliquam? Sed, eius.</p>
+    <h2 class="intermediario">HTML Intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ex debitis, dolorem ipsa laborum excepturi odit officiis dolore facilis minus, repellat enim ad illo at cupiditate natus. Sequi, veritatis impedit.
+    <h2 class ="avancado">HTML Avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quo velit. Sequi nihil voluptate non officia quae nemo assumenda adipisci pariatur et, repellat cum beatae aut itaque perferendis velit excepturi!</p>
+    <h1 class="destaque">Aprendendo CSS</h1>
+    <h2 class="basico">CSS Básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, debitis. Pariatur, nobis inventore. Odio ex tenetur alias, deserunt voluptas omnis est non at quis id nihil repellat voluptate officiis quae!</p>
+    <h2 class="intermediario">CSS Intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error impedit sapiente architecto magni illo ab odio nulla dignissimos, pariatur, deleniti officiis. Soluta nihil repellendus recusandae eligendi, ipsam corporis voluptatum!</p>
+    <h2 class ="avancado destaque">CSS Avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, modi quidem voluptate consequuntur repellat hic similique enim deleniti quis dolore molestias, sed fuga. Rerum alias odit dicta ipsa, quo dolorum!</p>
+    </p>
+</body>
+</html>
+
+<!-- 
+    ANOTAÇÕES SINTAXE DE IDENTIFICADOR E CLASSE
+    <h1 id="nome que eu quero pra id"> texto </h1>
+    <h1 class="nome que eu quero pra id"> texto </h1>
+    
+    Esse h1 pode ser h2, h3, h4, p ou qualquer outra notação de texto ou classe.
+
+    ATENÇÃO
+    Eu não posso ter mais de um mesmo tipo de declaração com o mesmo id. Por exemplo, dois elementos h1 não podem possuir o mesmo id="principal". Para evitar esse problema usa-se o class=""
+
+    O class permite que dois ou mais elementos de um mesmo tipo possa possuir um identificador em comum, mas é bom lembrar que em CSS ele é representado de maneira diferente! No arquivo style desse exercício tem mais detalhes.
+
+    Eu posso ter id e class dentro de um mesmo elemento e posso até mesmo ter duas classes dentro de um mesmo elemento. O h2 de CSS avançado mostra como fazer.
+
+
+    BOM ENTENDER
+    Evite usar ids ou class que se refiram a uma característica do seu elemento. Por exemplo id="verde", pois em caso de alteração da característica, você pode acabar confuso. No caso acima, como cada nível de curso aumentava, eu utilizei o nível de aprendizado mostrado no próprio h2 para servir de id/class.
+-->

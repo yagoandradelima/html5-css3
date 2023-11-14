@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(49, 165, 3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(6, 65, 4);
+}
+
+
+/*
+    em HTML > id = em CSS > #
+    em HTML > class = em CSS > .
+
+*/
+
+/*
+
+    Sintaxe abaixo
+    h1#principal = pegue o h1 cujo id em HTML é "principal"
+
+    também posso usar da seguinte forma
+    #principal = pegue todos os elementos cujo id em HTML é "principal"
+
+*/
+
+h1#principal {
+    text-align: center;
+    background-color: aqua;
+    color: white;
+}
+
+h2 {
+    color:rgb(25, 117, 22)
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: blue;
+}
+
+
+/*
+    Existe uma regra de prioridade para exibição de uma determinada estilização
+
+    1º ID
+    2º Class
+    3º Seletor geral
+
+    Ou seja, as configurações aplicadas a ID se sobrepõe a todas as outras, enquanto class se sobrepõe aos seletores gerais. MAS, caso uma configuração que exista em um Seletor Geral não seja especificada no class ou id de um elemento, essa configuração vai ser herdada pelo ID/Class.
+
+    Caso existe 2 classes indicando a mesma configuração, a última declaração informada, prevalece.
+*/
