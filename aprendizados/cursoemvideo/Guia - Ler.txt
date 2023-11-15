@@ -43,3 +43,5 @@ ex018  = Configurando fontes externas e internas com @import
 ex019  = Id e Classe - seletores, uso e conceitos
 
 ex020  = Mais sobre classes, pseudo-classes, pseudo-elementos e levemente sobre childrem (hierarquia)
+
+ex022  = Colocando imagens de fundo nos sites, trabalhando propriedades, tamanhos, capacidade, repetições e até mesmo formais apropriadas para preencher a tela
