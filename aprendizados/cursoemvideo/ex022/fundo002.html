@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt- br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização de fundos</title>
+    <style>
+
+        /*
+            Posso usar url da internet para pegar imagens, mas se elas saírem do ar deixam de ser exibidas no meu site
+
+            background-size é literalmente o tamanho da imagem que vai ser carregada. Esse tamanho irá ser copiado até preencher 100% da tela disponível utilizando os pixels informados como base
+        */
+
+        body {
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-size: 100px/*altura*/ 100px/*largura*/;
+
+            background-repeat: no-repeat;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de aplicação de fundo</h1>
+</body>
+</html>
+
+<!--
+    background-repeat:
+        repeat: vai repetir as imagens normalmente caso elas não comportem preencher o espaço disponível
+
+        no-repeat: impede a repetição. Pode ser usado em casos onde a repetição não é necessária
+
+        repeat-x: vai repetir apenas no eixo horizontal
+
+        repeat-y: vai repetir apenas o eixo vertical
+-->
