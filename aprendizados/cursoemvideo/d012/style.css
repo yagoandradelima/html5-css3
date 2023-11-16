@@ -1,5 +1,15 @@
 @charset  "UTF-08";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte-geral: Verdana, Geneva, Sans-serif;
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-texto: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +18,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte-geral);
 }
 
 header {
@@ -19,6 +30,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte-titulo);
+    font-size: 10vw; /* Aumenta e diminui a letra de acordo com o tamanho da tela. Não vale a pena. A melhor solução é ao media query */
 }
 
 header > p {
@@ -34,17 +47,38 @@ section {
 
 section.normal {
     background-color: white;
-    color: red;
+    color:  black;
 }
 
 section.imagem {
     background-color: rgb(31, 29, 29);
     color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.623);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    width: 400px;
-    background-color: rgb(12, 11, 11);
+    display: inline-block;
+    background-color: rgba(12, 11, 11, 0.527);
+    padding: 5px;
+    text-shadow: 1px 1px 3px rgb(27, 26, 26);
+}
+
+section {
+    font-family: var(--fonte-texto);
+    font-size: 3vw;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }
 
 a {
