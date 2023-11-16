@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas e alinhamento vertical</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            width: 100px;
+            height: 50px;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: middle; /*Alinhamento vertical*/
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+        tr.linha {
+            background-color: gray;
+        }
+
+        tr.dado {
+            background-color: yellow;
+        }
+
+        td.teste{
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        Hierarquia de tabelas simples
+        TABLE > Tabelas (table)
+            TABLE ROW > Linhas da tabela (tr)
+                TABLE HEADER > Cabeçalho da linha (th)
+                TABLE DATA > Dados da tabela (td)
+    -->
+    <table>
+        <tr> <!--Primeira Linha-->
+            <td class="teste">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+
+        <tr class="dado">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+
+        <tr>
+            <td>A6</td>
+        </tr>
+    </table>
+</body>
+</html>
