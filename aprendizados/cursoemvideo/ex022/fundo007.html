@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    <style>
+        #container {
+            position: relative; /* Por padrão position pega aqui */
+            height: 500px;
+            background-color: purple;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            position: absolute; /*  */
+            height: 200px;
+            width: 400px;
+            padding: 10px;
+
+            /* Valores que só funcionam quando a position é absolute. Essa configuração abaixo afasta a imagem na direção determinada */
+            left: 50%;
+            top: 50%;
+
+            background-color: yellow;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
+
+<!--
+    Li a documentação do Mozilla então se liga nessa regra.
+
+    O "position: absolute;" se posiciona de acordo com uma caixa que esteja em "position: relative;", ou seja, aquele "top: 50%" e o "left: 50%;" é em referência à "section".
+
+    CASO não haja uma caixa em position: absolute disponível para ser usada como balizadora, a caixa vai usar o navegador como base para realizar seu deslocamento
+-->
