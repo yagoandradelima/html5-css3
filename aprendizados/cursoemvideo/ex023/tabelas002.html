@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas grandes</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /*Obrigatório para configurar o fixar cabeçalho*/
+        }
+
+        thead > tr > th {
+            position: sticky; /*Configuração que libera a fixação do topo da tabela*/
+            top: -1px; /*Onde vai colar a tabela. Nesse caso fixa no topo a-1px*/
+            background-color: grey;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n) { /* Aplica efeito zebrado*/
+            background-color: rgb(163, 161, 161);
+            /* O argumento ali tá 2n, mas ele aceita odd (linhas ímpares) e even (linhas pares) */
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 1.5em;
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>População brasileira por estado</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.158.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.264.903</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">7.277.003</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">8.355.751</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="numero">10.432.951</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="numero">10.355.885</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">3.102.081</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">901.055</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero">5.833.667</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero">15.922.457</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>45 919 049</strong></td>
+            </tr>
+        </tfoot>
+
+    </table>    
+
+
+    <!--
+        Essa estrutura aqui é melhor para tabelas com muitos dados
+
+        TABLE (table)
+            CAPTION (caption) - legenda da tabela
+            TABLE HEAD (thead)
+                TABLE HEADER (th)
+                TABLE ROW (tr)
+                TABLE DATA (td)
+            TABLE BODY (tbody)
+                TABLE HEADER (th)
+                TABLE ROW (tr)
+                TABLE DATA (td)
+            TABLE FOOT (tfoot)
+                TABLE HEADER (th)
+                TABLE ROW (tr)
+                TABLE DATA (td)
+
+        TODO th pode receber um argumento scope=""
+        Esse argumento informa onde estão os dados 
+        do qual o th é a referência. Por exemplo,
+        
+        A coluna de Estados tem o th com o nome de estado
+        os dados que esse título representa são os que estão
+        presente na COLUNA logo abaixo dele, logo seu scope
+        recebe o argumento "col"
+
+        Da mesma forma o th de total de população pega o
+        argumento "row", informado que ele é o título de
+        um dado que está na mesma linha ao lado.
+
+        Essa configuração não muda nada visualmente, mas
+        é muito importante para melhorar a qualidade de
+        indicação dos mecanismos de busca do seu site
+    -->
+</body>
+</html>
