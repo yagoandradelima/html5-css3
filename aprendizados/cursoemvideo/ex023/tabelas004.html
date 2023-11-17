@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando colunas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .cA {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cA">
+            <col class="cB">
+            <col class="cC">
+            <col class="cD">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+                <td>D2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+                <td>D3</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+                <td>D4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!--
+    A tag <colgroup> recebe dentro dela outra tag chamada
+    <col>. Cada <col> pode receber class ou ID e representam
+    uma coluna. A quantidade dessa última tag deve ser igual
+    ao número de colunas da sua tabela.
+
+    A primeira <col> representa a primeira coluna da tabela
+    e assim sucessivamente até a última coluna. class=""
+-->
